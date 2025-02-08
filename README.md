@@ -1,2 +1,2 @@
 # nimbus
-Webapp for designing and analyzing meshes
+Let it rain
