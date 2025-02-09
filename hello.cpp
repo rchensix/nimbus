@@ -7,5 +7,5 @@ std::string sayHello() {
 }
 
 EMSCRIPTEN_BINDINGS(hello_module) {
-    emscripten::function("SayHello", &sayHello);
+    emscripten::function("sayHello", &sayHello);
 }
