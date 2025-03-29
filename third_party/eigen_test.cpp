@@ -18,13 +18,11 @@
 #include <Eigen/Dense>
 #include <gtest/gtest.h>
 
-static constexpr double kTol = 1.0e-12;
-
 TEST(Eigen, VerifyCompileAndRun) {
   Eigen::Matrix2d m;
   m << 1, 2,
        3, 4;
   const double det = m.determinant();
   const double det_expected = 1.0 * 4.0 - 2.0 * 3.0;
-  EXPECT_NEAR(det, det_expected, kTol);
+  EXPECT_DOUBLE_EQ(det, det_expected);
 }
